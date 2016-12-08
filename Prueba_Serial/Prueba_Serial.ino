@@ -13,9 +13,9 @@ void loop() {
   valorX = analogRead(ejeX);
   valorY = analogRead(ejeY);
   valorMarcha = analogRead(seleccionMarcha);
-  //Serial.println(valorX);
   Serial.println(valorY);
-  //Serial.print(valorMarcha);
+  Serial.println(valorX);
+  Serial.println(valorMarcha);
   //Serial.println();
   Serial.flush();
   //delay(500);
