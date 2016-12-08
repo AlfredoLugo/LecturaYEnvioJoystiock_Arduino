@@ -1,22 +1,22 @@
+//Definición de los pines de lectura de valores análogos
 #define ejeX A1
 #define ejeY A0
-#define seleccionMarcha A2
 
+//Declaración de variables 
 int valorX;
 int valorY;
-int valorMarcha;
 
 void setup() {
+  //Inicialiación de la comunicación serial 
   Serial.begin(250000);}
 
 void loop() {
+  //Lectura de Joystick
   valorX = analogRead(ejeX);
   valorY = analogRead(ejeY);
-  valorMarcha = analogRead(seleccionMarcha);
+  //Envio de datos y limpieza de buffer
   Serial.println(valorY);
-  Serial.println(valorX);
-  Serial.println(valorMarcha);
-  //Serial.println();
   Serial.flush();
-  //delay(500);
+  Serial.println(valorX);
+  Serial.flush();
 }
