@@ -18,5 +18,5 @@ void loop() {
   //Serial.print(valorMarcha);
   //Serial.println();
   Serial.flush();
-  delay(500);
+  //delay(500);
 }
